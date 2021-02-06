@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="004079b8-0d50-4cfa-98e4-7eaef3ea1c44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Constructor/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Images/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Result/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Constructor/Model/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Constructor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Constructor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Images/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Images/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\oleg-.DESKTOP-HMVRFLJ\WebstormProjects\kamaz\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -85,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612602810789</updated>
       <workItem from="1612602811853" duration="1719000" />
-      <workItem from="1612605367833" duration="2102000" />
+      <workItem from="1612605367833" duration="11781000" />
     </task>
     <servers />
   </component>
@@ -129,5 +130,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612605061086" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1612613487775">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612613487775" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1612615268005">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612615268005" />
   </component>
 </project>
