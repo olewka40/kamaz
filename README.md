@@ -1,1 +1,1 @@
-kamaz
+Kamaz
