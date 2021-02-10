@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import { Select, MenuItem } from "@material-ui/core";
+import { MenuItem } from "@material-ui/core";
 import { StyledSelect } from "../index";
 
-export const Models = ({ result }) => {
+export const Models = ({ result, selectedModel, setSelectedModel }) => {
+  console.log(selectedModel);
   return (
     <Container>
-      <StyledSelect variant="outlined">
+      <StyledSelect
+        variant="outlined"
+        value={selectedModel}
+        onChange={(e) => {
+          setSelectedModel(e.target.value);
+        }}
+      >
         {result.map((model) => (
-          <MenuItem value={model.value}>{model.modelName}</MenuItem>
+          <MenuItem key={model} value={model.value}>
+            {model.modelName}
+          </MenuItem>
         ))}
       </StyledSelect>
     </Container>

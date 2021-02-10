@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="004079b8-0d50-4cfa-98e4-7eaef3ea1c44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Constructor/Model/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Constructor/ModelConstructor/SeriesConstructor/SerialModel/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Constructor/ModelConstructor/SeriesConstructor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Constructor/ModelConstructor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Constructor/Model/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Constructor/Model/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Constructor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Constructor/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Images/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Images/index.js" afterDir="false" />
     </list>
@@ -54,7 +57,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Main/Images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TLG" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -86,7 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1612602810789</updated>
       <workItem from="1612602811853" duration="1719000" />
-      <workItem from="1612605367833" duration="11781000" />
+      <workItem from="1612605367833" duration="13515000" />
+      <workItem from="1612622734365" duration="275000" />
+      <workItem from="1612969856779" duration="15599000" />
     </task>
     <servers />
   </component>
@@ -106,10 +111,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612976915371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612976915371" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612603296891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612603296891" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1612622740220">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612622740220" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1612603791374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -134,9 +147,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612613487775" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1612615268005">
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1612977865659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612615268005" />
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612977865659" />
   </component>
 </project>

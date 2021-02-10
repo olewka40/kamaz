@@ -1,47 +1,38 @@
-import React, { useContext, useState } from "react";
+import React, { useState, memo } from "react";
 import styled from "styled-components";
 import { Select, InputLabel, MenuItem, FormControl } from "@material-ui/core";
-import { DataContext } from "../../context/DataContext";
 import { Controller, useForm } from "react-hook-form";
 import { Models } from "./Model";
-export const Constructor = () => {
+import { contructorStages, models } from "../../../constants/config";
+import Button from "@material-ui/core/Button";
+import { ModelConstructor } from "./ModelConstructor";
+
+export const Constructor = memo(() => {
   const { control, handleSubmit } = useForm();
   const [result, setResult] = useState([]);
   const [status, setStatus] = useState(false);
-  const { contructorStages, models } = useContext(DataContext);
-
-
-  const [activeStep, setActiveStep] = React.useState(0);
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
-
-
+  const [selectedModel, setSelectedModel] = useState("");
+  const [openSelModel, setOpenSelModel] = useState(false);
   const onSubmit = (data) => {
-    console.log(data);
     const results = models.filter(
       (e) =>
-        e.whileBase === data.whileBase && e.powerFilter === data.powerFilter
+        e.whileBase === data.whileBase &&
+        e.powerFilter === data.powerFilter &&
+        data.typeCore === e.typeCore
     );
-    console.log(results);
     setResult(results);
     setStatus(true);
   };
+
+  const continueToConf = () => {
+    setOpenSelModel(true);
+  };
+
   return (
     <Container>
       <form onSubmit={handleSubmit(onSubmit)}>
         {contructorStages.map((params) => (
-          <Params>
+          <Params key={params.id}>
             <FormControl key={params.nameParam}>
               <InputLabel>{params.nameParam}</InputLabel>
               <Controller
@@ -60,12 +51,25 @@ export const Constructor = () => {
             </FormControl>
           </Params>
         ))}
-        <input type="submit" />
+        <StyledButton type="submit" variant="contained" color="primary">
+          Сформировать список моделей
+        </StyledButton>
       </form>
-      {status && <Models result={result} />}
+      {status && (
+        <Models
+          result={result}
+          selectedModel={selectedModel}
+          setSelectedModel={setSelectedModel}
+          openSelModel={openSelModel}
+          setOpenSelModel={setOpenSelModel}
+        />
+      )}
+
+      <Button onClick={continueToConf}> Продолжить сборку </Button>
+      {openSelModel && <ModelConstructor selectedModel={selectedModel} />}
     </Container>
   );
-};
+});
 
 const Container = styled.div`
   display: flex;
@@ -78,6 +82,9 @@ const Container = styled.div`
 `;
 export const StyledSelect = styled(Select)`
   width: 200px;
+`;
+export const StyledButton = styled(Button)`
+  margin: 10px !important;
 `;
 
 export const Params = styled.div`
