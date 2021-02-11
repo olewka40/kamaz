@@ -78,13 +78,15 @@ export const models = [
                 modelName: "KH5036",
                 options: [
                   {
+                    id: 0,
                     name: "КН5036",
-                    enName: "",
+                    enName: "КН5036",
                     cost: 611000,
                     nalogCost: 0,
                     time: 0,
                   },
                   {
+                    id: 1,
                     name: "Бункер из нержавейки (доплата)",
                     enName: "",
                     cost: 266667,
@@ -92,6 +94,7 @@ export const models = [
                     time: 0,
                   },
                   {
+                    id: 2,
                     name: "система увлажнения",
                     enName: "",
                     cost: 109000,
@@ -99,6 +102,7 @@ export const models = [
                     time: 0,
                   },
                   {
+                    id: 3,
                     name: "система быстросъемности Giletta+МК P3",
                     enName: "",
                     cost: 71300,
@@ -106,6 +110,7 @@ export const models = [
                     time: 0,
                   },
                   {
+                    id: 4,
                     name: "установка на шасси (обычная)",
                     enName: "",
                     cost: 26128,
@@ -113,6 +118,7 @@ export const models = [
                     time: 0,
                   },
                   {
+                    id: 5,
                     name: "установка на шасси TwistLock",
                     enName: "",
                     cost: 31354,
@@ -120,6 +126,7 @@ export const models = [
                     time: 0,
                   },
                   {
+                    id: 6,
                     name: "Боковые козырьки",
                     enName: "",
                     cost: 3834,
@@ -127,6 +134,7 @@ export const models = [
                     time: 0,
                   },
                   {
+                    id: 7,
                     name: "Увеличение объема до 8 м3",
                     enName: "",
                     cost: 55000,
@@ -134,6 +142,7 @@ export const models = [
                     time: 0,
                   },
                   {
+                    id: 8,
                     name: "Увеличение объема НЕРЖАВЕЙКИ до 8 м3",
                     enName: "",
                     cost: 81667,

@@ -18,14 +18,14 @@ export const SeriesConstructor = memo(({ topEquipmentType }) => {
     );
     setEquipmentSeries(curSer[0]);
     setTimeout(() => {
-      setOpenNext(true);
+      setOpenNext(!openNext);
     }, 100);
   };
 
   useEffect(() => {
     setTimeout(() => {
       setOpenNextStep(!openNextStep);
-    }, 0);
+    }, 100);
   }, []);
 
   return (
@@ -34,7 +34,7 @@ export const SeriesConstructor = memo(({ topEquipmentType }) => {
         <form onSubmit={handleSubmit(nextStep)}>
           <FormContainer>
             <FormControl>
-              <InputLabel>Выбор модели оборудования </InputLabel>
+              <InputLabel>Выбор серии оборудования </InputLabel>
               <Controller
                 variant="outlined"
                 name="equipmentSeries"

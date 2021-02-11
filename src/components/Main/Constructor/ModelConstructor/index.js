@@ -11,15 +11,11 @@ export const ModelConstructor = memo(({ selectedModel }) => {
   const { control, handleSubmit } = useForm();
   const [topEquipmentType, setTopEquipmentType] = useState("");
   const [openSerConstruct, setOpenSerConstruct] = useState(false);
-  console.log("я конструктор модели и я отобраэаюсь");
   const nextStep = (data) => {
-    console.log(data.topEquipment, "нужная инфа");
-    console.log(currentModel[0].topEquipment, "нужная инфа");
 
     const currentEq = currentModel[0].topEquipment.filter(
       (e) => e.enName === data.topEquipment
     );
-    console.log(currentEq);
     setTopEquipmentType(currentEq);
     setOpenSerConstruct(true);
   };

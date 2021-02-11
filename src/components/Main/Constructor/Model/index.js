@@ -4,7 +4,6 @@ import { MenuItem } from "@material-ui/core";
 import { StyledSelect } from "../index";
 
 export const Models = ({ result, selectedModel, setSelectedModel }) => {
-  console.log(selectedModel);
   return (
     <Container>
       <StyledSelect
